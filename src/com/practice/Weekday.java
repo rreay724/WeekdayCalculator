@@ -43,7 +43,7 @@ public class Weekday {
 //        System.out.println("================================================================");
 //        System.out.println("Day of the week is " + weekDay);
 
-        System.out.println("================================================================");
+        System.out.println("=================================================================");
 
         Map<Integer, String> map = new HashMap<>();
         map.put(0, "Saturday");
