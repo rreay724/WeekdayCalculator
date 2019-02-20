@@ -1,9 +1,6 @@
 package com.practice;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Weekday {
 
@@ -45,21 +42,24 @@ public class Weekday {
 
         System.out.println("=================================================================");
 
-        Map<Integer, String> map = new HashMap<>();
-        map.put(0, "Saturday");
-        map.put(1, "Sunday");
-        map.put(2, "Monday");
-        map.put(3, "Tuesday");
-        map.put(4, "Wednesday");
-        map.put(5, "Thursday");
-        map.put(6, "Friday");
+        String [] daysOfWeek = {"Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
+        System.out.println("The day of the week is " + daysOfWeek[weekDay]);
 
-        Set<Integer> keys = map.keySet();
-        for(Integer key : keys){
-            if (key == weekDay){
-                System.out.println("The day of the week is " + map.get(key));
-            }
-        }
+//        Map<Integer, String> map = new HashMap<>();
+//        map.put(0, "Saturday");
+//        map.put(1, "Sunday");
+//        map.put(2, "Monday");
+//        map.put(3, "Tuesday");
+//        map.put(4, "Wednesday");
+//        map.put(5, "Thursday");
+//        map.put(6, "Friday");
+//
+//        Set<Integer> keys = map.keySet();
+//        for(Integer key : keys){
+//            if (key == weekDay){
+//                System.out.println("The day of the week is " + map.get(key));
+//            }
+//        }
 
 //        if(weekDay == 0){
 //            System.out.println("Day of the week is Saturday");
