@@ -15,9 +15,7 @@ public class Weekday {
         // Get day, month and year
         System.out.println("Enter day: ");
         int day = scanner.nextInt();
-
-        int Saturday = 0;
-
+        
         System.out.println("Enter month: ");
         int month = scanner.nextInt();
 
