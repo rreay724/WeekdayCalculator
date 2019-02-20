@@ -6,7 +6,7 @@ public class Weekday {
 
     public static void main (String[] args) {
 
-        // displaying legend
+        // Displays legend
         System.out.println("This will calculate what day of the week for date provided.");
         System.out.println("=================================================================");
 
@@ -15,28 +15,39 @@ public class Weekday {
         // Get day, month and year
         System.out.println("Enter day: ");
         int day = scanner.nextInt();
-        
+
         System.out.println("Enter month: ");
         int month = scanner.nextInt();
 
         System.out.println("Enter year: ");
         int year = scanner.nextInt();
 
+        /** century and yearpart variables **/
+        // For 2007 the century would be 20
         int century = year/100;
+
+        // Yearpart is the year within the century. For 1994 the yearpart would be 94
         int yearPart = year % 100;
 
-        int monthMath = ((month + 1) * 26) / 10;
+
+        /** The Algorithm to calculate the day of the week is as follows:
+        weekday = (day + (((month + 1) *26) / 10) + yearpart + (yearpart/4) + (century/4) + (5*century)) mod 7 **/
+
+        // Calculations
+//        int monthMath = ((month + 1) * 26) / 10;
 //        System.out.println(monthMath);
 
-        int yearPartMath = (yearPart/4);
+//        int yearPartMath = (yearPart/4);
 //        System.out.println(yearPartMath);
 
-        int centuryMath = (century / 4);
+//        int centuryMath = (century / 4);
 //        System.out.println(centuryMath);
 
-        int weekDay = (day + monthMath + yearPart + yearPartMath + centuryMath + (5 * century)) % 7;
-//        System.out.println("================================================================");
+        // Final calculation
+//        int weekDay = (day + monthMath + yearPart + yearPartMath + centuryMath + (5 * century)) % 7;
 //        System.out.println("Day of the week is " + weekDay);
+
+        int weekDay = (day + (((month + 1) * 26) / 10) + yearPart + (yearPart/4) + (century/4) + (5 * century)) % 7;
 
         System.out.println("=================================================================");
 
