@@ -37,14 +37,27 @@ public class Weekday {
         int weekDay = (day + monthMath + yearPart + yearPartMath + centuryMath + (5 * century)) % 7;
         System.out.println("Day of the week is " + weekDay);
 
-
-
-
-
-
-
-
-
+        if(weekDay == 0){
+            System.out.println("Saturday");
+        }
+        if( weekDay == 1){
+            System.out.println("Sunday");
+        }
+        if(weekDay == 2){
+            System.out.println("Monday");
+        }
+        if(weekDay == 3){
+            System.out.println("Tuesday");
+        }
+        if (weekDay == 4){
+            System.out.println("Wednesday");
+        }
+        if (weekDay == 5){
+            System.out.println("Thursday");
+        }
+        if (weekDay == 6){
+            System.out.println("Friday");
+        }
 
     }
 
