@@ -14,8 +14,8 @@ public class VectorManipulation {
         Vector v2 = new Vector();
 
         /** Print each vector size **/
-        System.out.println(v1.size());
-        System.out.println(v2.size());
+        System.out.println("Vector 1 size: " + v1.size());
+        System.out.println("Vector 2 size: " + v2.size());
 
         /** Enter 4 Strings **/
         System.out.println("Enter four strings");
@@ -59,7 +59,7 @@ public class VectorManipulation {
 
         System.out.println("=======================================");
 
-        System.out.println("Enter index number between 0 and 3 for vector 1: ");
+        System.out.println("Enter index number between 1 and 3 for vector 1: ");
         int i = scanner.nextInt();
         System.out.println("=======================================");
 
@@ -70,33 +70,33 @@ public class VectorManipulation {
         v1.remove(i);
         v2.remove(i);
         System.out.println("========================================");
-        System.out.println("Contents with removed index from vector 1 is: \n" + v1);
-        System.out.println("Contents with removed index from vector 2 is: \n" + v2);
+        System.out.println("Contents with removed index from vector 1 is: " + v1);
+        System.out.println("Contents with removed index from vector 2 is: " + v2);
 
         System.out.println("=========================================");
 
         System.out.println("Adding element at index 0 from vector 1 to vector 2");
         v2.add(v1.get(0));
 
-        System.out.println("Vector 1 size: /n" + v1.size() + "\nVector 1 contents: " + v1);
-        System.out.println("Vector 2 size: /n" + v2.size() + "\nVector 1 contents: " + v2);
+        System.out.println("Vector 1 size: " + v1.size() + "\nVector 1 contents: " + v1);
+        System.out.println("Vector 2 size: " + v2.size() + "\nVector 2 contents: " + v2);
 
         System.out.println("==========================================");
         System.out.println("Enter one more string: ");
         String string9 = scanner.next();
         v1.add(string9);
 
-        System.out.println("Index of String9 in vector 1 is \n" + v1.indexOf(string9));
+        System.out.println("Index of String9 in vector 1 is: " + v1.indexOf(string9));
         System.out.println("============================================");
-        System.out.println("First element of vector one is : \n" + v1.firstElement() + "\nLast element of " +
-                "vector 1 is \n" + v1.lastElement());
+        System.out.println("First element of vector 1 is: " + v1.firstElement() + "\nLast element of " +
+                "vector 1 is: " + v1.lastElement());
 
         System.out.println("=============================================");
         System.out.println("Clearing all elements from vector 2");
         v2.clear();
 
-        System.out.println("Vector 1 size: /n" + v1.size() + "\nVector 1 contents: " + v1);
-        System.out.println("Vector 2 size: /n" + v2.size() + "\nVector 1 contents: " + v2);
+        System.out.println("Vector 1 size: " + v1.size() + "\nVector 1 contents: " + v1);
+        System.out.println("Vector 2 size: " + v2.size() + "\nVector 2 contents: " + v2);
 
 
 
