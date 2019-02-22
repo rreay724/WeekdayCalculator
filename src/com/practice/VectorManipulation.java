@@ -9,6 +9,9 @@ public class VectorManipulation {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("This is a vector manipulation program.");
+        System.out.println("=========================================");
+
         /** Vector variables **/
         Vector v1 = new Vector();
         Vector v2 = new Vector();
